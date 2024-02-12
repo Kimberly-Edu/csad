@@ -80,14 +80,14 @@ const Home = () => {
               newPostId={newPostId}
             ></NewPost>
           <div className="flex flex-col py-4 w-full">
-            {state?.error ? (
+            {/* {state?.error ? (
               <div className="flex justify-center items-center">
                   Something went wrong refresh and try again...
-                {/* <Alert color="red">
+                <Alert color="red">
                   Something went wrong refresh and try again...
-                </Alert> */}
+                </Alert>
               </div>
-            ) : (
+            ) : ( */}
               <div id="what">
                 <h1>Posts: {state?.posts?.length}</h1>
                 {state?.posts?.length > 0 &&
@@ -113,7 +113,7 @@ const Home = () => {
                     );
                   })}
               </div>
-            )}
+            {/* )} */}
           </div>
           <div ref={scrollRef}>{/* refference for later */}</div>
         </div>
