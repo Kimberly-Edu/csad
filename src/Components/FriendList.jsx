@@ -46,7 +46,7 @@ const FriendList = () => {
         //   }
         // data?.map((item, index) => {
         //     alert("item: "+ item.id);
-        console.log(data);
+        // console.log(data);
         var empty = {};
         // console.log("Newdata", newData);
         for(var k in data){
@@ -109,7 +109,7 @@ const FriendList = () => {
     };
     
     useEffect(() => {
-      console.log("HELLO", user);
+      // console.log("HELLO", user);
        
       setTimeout(() =>{
         // searchFriends(friendList); //alert("C:"+friendList.length);

@@ -3,7 +3,7 @@ import {useState, useRef, useContext, useReducer, useEffect} from "react";
 import { collection, doc, setDoc, query, orderBy, onSnapshot, serverTimestamp } from "firebase/firestore";
 import { auth, db, onAuthStateChanged } from "../firebase/firebase";
 import { AuthContext } from "../AppContext/AppContext";
-import {PostsReducer,postActions,postsStates,} from "../AppContext/PostReducer";// ???
+import {PostsReducer,postActions,postsStates} from "../AppContext/PostReducer";// ???
 import { Alert } from "@material-tailwind/react";
 import PostCard from "./PostCard";
 import NewPost from "./NewPost";
@@ -90,6 +90,9 @@ const Home = () => {
             ) : ( */}
               <div id="what">
                 <h1>Posts: {state?.posts?.length}</h1>
+                {console.log("state ",state)}
+                {console.log("state?.posts ",state?.posts)}
+
                 {state?.posts?.length > 0 &&
                   state?.posts?.map((post, index) => {
                     // if (post?.desc !== undefined){ alert(post?.desc);}
