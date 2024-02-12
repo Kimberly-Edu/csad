@@ -82,12 +82,13 @@ const Home = () => {
           <div className="flex flex-col py-4 w-full">
             {state?.error ? (
               <div className="flex justify-center items-center">
-                <Alert color="red">
                   Something went wrong refresh and try again...
-                </Alert>
+                {/* <Alert color="red">
+                  Something went wrong refresh and try again...
+                </Alert> */}
               </div>
             ) : (
-              <div>
+              <div id="what">
                 <h1>Posts: {state?.posts?.length}</h1>
                 {state?.posts?.length > 0 &&
                   state?.posts?.map((post, index) => {
