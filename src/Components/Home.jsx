@@ -88,6 +88,7 @@ const Home = () => {
               </div>
             ) : (
               <div>
+                <h1>Posts: {state?.posts?.length}</h1>
                 {state?.posts?.length > 0 &&
                   state?.posts?.map((post, index) => {
                     // if (post?.desc !== undefined){ alert(post?.desc);}

@@ -74,7 +74,6 @@ const Home = () => {
 
           </div>
           {/* {editPostId} */}
-         
             <NewPost 
               editPostId={editPostId}
               newPostId={newPostId}
