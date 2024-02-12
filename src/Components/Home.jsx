@@ -97,6 +97,7 @@ const Home = () => {
                   state?.posts?.map((post, index) => {
                     // if (post?.desc !== undefined){ alert(post?.desc);}
                     return (
+                      <div>
                       <PostCard
                         key={index}
                         logo={post?.logo}
@@ -113,7 +114,8 @@ const Home = () => {
 
                         getPostId={getPostId}
                       ></PostCard>
-                    );
+                    </div>);
+                    
                   })}
               </div>
             {/* )} */}
