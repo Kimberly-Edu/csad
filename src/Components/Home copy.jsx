@@ -80,6 +80,7 @@ const Home = () => {
               newPostId={newPostId}
             ></NewPost>
           <div className="flex flex-col py-4 w-full">
+            
             {state?.error ? (
               <div className="flex justify-center items-center">
                 <Alert color="red">
@@ -88,6 +89,7 @@ const Home = () => {
               </div>
             ) : (
               <div>
+                <h1>Posts: {state?.posts?.length}</h1>
                 {state?.posts?.length > 0 &&
                   state?.posts?.map((post, index) => {
                     // if (post?.desc !== undefined){ alert(post?.desc);}
