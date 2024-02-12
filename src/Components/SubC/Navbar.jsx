@@ -17,6 +17,7 @@ const Navbar = () => {
 
         <Link to="/" ><button style={styleLink}>Home</button></Link>
         <Link to="/post" ><button style={styleLink}>New Blog</button></Link>
+        <Link to="/login" ><button style={styleLink}>Login</button></Link>
         <SignOutBtn></SignOutBtn>
       
 
